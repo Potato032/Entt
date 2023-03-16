@@ -23,7 +23,7 @@ if not game.Workspace:FindFirstChild("A-60New") then break end
 		hum.Health-=5
 		if hum.Health<=0 then
 			game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Overseer Eyes"
-			firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You've been consumed by the Overseer Eyes.", "They want you to obey and look at them.", "If you dont look at them while they look at you, they will damage."}, "Blue")
+			firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Greed.", "It want to steal your attention.", "If you dont look at it, it will damage you."}, "Blue")
 		end
 	end
 	task.wait(.25)
