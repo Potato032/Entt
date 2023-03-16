@@ -20,7 +20,7 @@ while true and enableDamage do
 if not game.Workspace:FindFirstChild("A-60New") then break end
 	local _,found=workspace.CurrentCamera:WorldToScreenPoint(eyes.RushNew.Position)
 	if not found then
-		hum.Health-=5
+		hum.Health-=6
 		if hum.Health<=0 then
 			game:GetService("ReplicatedStorage").GameStats["Player_".. game.Players.LocalPlayer.Name].Total.DeathCause.Value = "Overseer Eyes"
 			firesignal(game.ReplicatedStorage.EntityInfo.DeathHint.OnClientEvent, {"You died to Greed.", "It want to steal your attention.", "If you dont look at it, it will damage you."}, "Blue")
