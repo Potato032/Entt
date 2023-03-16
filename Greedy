@@ -1,5 +1,3 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/6brG9uma"))()
-
 local enableDamage = true
  
 local currentLoadedRoom=workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
