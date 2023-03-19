@@ -1013,6 +1013,6 @@ local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 Achievements.Get({
     Title = "Another Rebound",
     Desc = "I always come back.",
-    Reason = "Encounter Rebound before or after his rebound.",
+    Reason = "Encounter Rebound before of his rebound.",
     Image = "rbxassetid://12517246751",
 })
