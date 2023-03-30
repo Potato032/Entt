@@ -1,0 +1,32 @@
+    -- UI Construction
+
+    local JumpscareGui = Instance.new("ScreenGui")
+    local Background = Instance.new("Frame")
+    local Face = Instance.new("ImageLabel")
+
+    JumpscareGui.Name = "JumpscareGui"
+    JumpscareGui.IgnoreGuiInset = true
+    JumpscareGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    JumpscareGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+    Face.Name = "Face"
+    Face.AnchorPoint = Vector2.new(0.5, 0.5)
+    Face.BackgroundTransparency = 1
+    Face.Position = UDim2.new(0.5, 0, 0.5, 0)
+    Face.ResampleMode = Enum.ResamplerMode.Pixelated
+    Face.Size = UDim2.new(0, 150, 0, 150)
+    Face.Image = "rbxassetid://12557229575"
+
+    Face.Parent = JumpscareGui
+    
+
+
+    game.TweenService:Create(Face, TweenInfo.new(0.5), {Size = UDim2.new(0, 1550, 0, 750), ImageTransparency = 0}):Play()
+ local jump = Instance.new("Sound") 
+ jump.Parent = game.Workspace 
+ jump.SoundId = "rbxassetid://5768784048" 
+ jump.Volume = 3 
+ jump:Play() 
+    task.wait(0.6)
+    JumpscareGui:Destroy()
+    
