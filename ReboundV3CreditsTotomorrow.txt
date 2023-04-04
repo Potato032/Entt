@@ -1,4 +1,5 @@
-game.SoundService.AmbientReverb = "Cave"
+-- Credits to tomorrow
+
 local part = Instance.new("Part")
 part.Name = "Bound"
 part.Parent = workspace
@@ -9,7 +10,7 @@ local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Contrast = 0}):Play()
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Saturation = 0}):Play()
 local TweenService = game:GetService("TweenService")
-local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(20),{TintColor = Color3.fromRGB(255, 255, 255)})
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(60),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
 local cue1 = Instance.new("Sound")
 cue1.Parent = game.Workspace
