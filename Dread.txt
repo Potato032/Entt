@@ -30,7 +30,7 @@ clock.SoundId = ReplaceAudGit("https://github.com/Potato032/Entt/blob/main/Clock
 clock.Volume = 7
 clock:Play()
 -- The Speed
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 9
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10
 -- The Effect 1
 game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(71, 151, 211)
 game.Lighting.MainColorCorrection.Contrast = 0
@@ -59,9 +59,9 @@ ImageLabel.ImageColor3 = Color3.fromRGB(0, 0, 0)
 game.TweenService:Create(ImageLabel,TweenInfo.new(1),{ImageTransparency = 1}):Play()
 ImageLabel.ImageTransparency = 1
 
-game.TweenService:Create(ImageLabel,TweenInfo.new(5),{ImageTransparency = -5}):Play()
+game.TweenService:Create(ImageLabel,TweenInfo.new(7),{ImageTransparency = -10}):Play()
 			wait(0.5)	
-game.TweenService:Create(ImageLabel,TweenInfo.new(30),{ImageTransparency = -300}):Play()
+game.TweenService:Create(ImageLabel,TweenInfo.new(30),{ImageTransparency = -100}):Play()
 -- Ended thing
       wait(31.5)
       chest:Destroy()
