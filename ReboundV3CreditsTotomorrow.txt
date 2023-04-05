@@ -1,7 +1,7 @@
 -- Credits to tomorrow
 local rebb = false
 coroutine.wrap(function()
-  while true do
+  
     wait(257)
 if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
     print("Entity will not spawn")
@@ -613,6 +613,5 @@ end
 
 -- Run the created entity
 Creator.runEntity(entity)
-end
 end
 end)()
