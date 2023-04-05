@@ -499,7 +499,14 @@ entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
     wait(15)
     workspace.RebOund:Destroy()
-    if rebb == false then
+end
+
+entity.Debug.OnEntityDespawned = function(entityModel)
+    print("Entity has despawned:", entityModel)
+    cue1:Destroy()
+    cue2:Destroy()
+    part:Destroy()
+if rebb == false then
     wait(1)
     rebb = true
 local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
@@ -509,16 +516,9 @@ Achievements.Get({
     Title = "I Always Come Back",
     Desc = "Coming back in a few seconds!",
     Reason = "Encounter Rebound.",
-    Image = "rbxassetid://1",
+    Image = "https://github.com/check78/worldcuuuup/blob/main/ReboundBadgeV2.png?raw=true",
 })
 end
-end
-
-entity.Debug.OnEntityDespawned = function(entityModel)
-    print("Entity has despawned:", entityModel)
-    cue1:Destroy()
-    cue2:Destroy()
-    part:Destroy()
 end
 
 entity.Debug.OnEntityStartMoving = function(entityModel)
