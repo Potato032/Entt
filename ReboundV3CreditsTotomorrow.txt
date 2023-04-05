@@ -1,4 +1,12 @@
 -- Credits to tomorrow
+local rebb = false
+coroutine.wrap(function()
+  while true do
+    wait(265)
+if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
+    print("Entity will not spawn")
+else
+    game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
 local part = Instance.new("Part")
 part.Name = "Bound"
@@ -491,6 +499,19 @@ entity.Debug.OnEntitySpawned = function(entityModel)
     print("Entity has spawned:", entityModel)
     wait(15)
     workspace.RebOund:Destroy()
+    if rebb == false then
+    wait(1)
+    rebb = true
+local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
+
+-- Creates and displays your custom achievement
+Achievements.Get({
+    Title = "I Always Come Back",
+    Desc = "Coming back in a few seconds!",
+    Reason = "Encounter Rebound.",
+    Image = "rbxassetid://1",
+})
+end
 end
 
 entity.Debug.OnEntityDespawned = function(entityModel)
@@ -592,3 +613,6 @@ end
 
 -- Run the created entity
 Creator.runEntity(entity)
+end
+end
+end)()
