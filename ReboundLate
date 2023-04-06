@@ -1,7 +1,5 @@
 -- Credits to tomorrow 
 
- local rebb = false 
-
  coroutine.wrap(function() 
 
    while true do 
@@ -1012,33 +1010,7 @@
 
      cue2:Destroy()  
 
-     part:Destroy() 
-
- if rebb == false then 
-
-     wait(1) 
-
-     rebb = true 
-
- local Achievements = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))() 
-
-  
-
- -- Creates and displays your custom achievement 
-
- Achievements.Get({ 
-
-     Title = "I Always Come Back", 
-
-     Desc = "Coming back in a few seconds!", 
-
-     Reason = "Encounter Rebound.", 
-
-     Image = "https://github.com/check78/worldcuuuup/blob/main/ReboundBadgeV2.png?raw=true", 
-
- }) 
-
- end  
+     part:Destroy()
 
  end  
 
