@@ -8,6 +8,7 @@ if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing 
 else
     game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
 
+game.SoundService.AmbientReverb = "City"
 local part = Instance.new("Part")
 part.Name = "Bound"
 part.Parent = workspace
@@ -613,5 +614,6 @@ end
 
 -- Run the created entity
 Creator.runEntity(entity)
+game.SoundService.AmbientReverb = "Cave"
 end
 end)()
