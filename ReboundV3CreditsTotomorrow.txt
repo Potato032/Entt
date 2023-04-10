@@ -1,25 +1,17 @@
 -- Credits to tomorrow
 local rebb = false
-coroutine.wrap(function()
-  
-    wait(235)
-if workspace.Ambience_Seek.Playing == true or workspace.Ambience_Figure.Playing == true then
-    print("Entity will not spawn")
-else
-    game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
-
 game.SoundService.AmbientReverb = "City"
 local part = Instance.new("Part")
 part.Name = "Bound"
 part.Parent = workspace
-game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(51, 111, 210)
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(51, 111, 150)
 game.Lighting.MainColorCorrection.Contrast = 0.2
 game.Lighting.MainColorCorrection.Saturation = -0.7
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Contrast = 0}):Play()
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(5), {Saturation = 0}):Play()
 local TweenService = game:GetService("TweenService")
-local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(45),{TintColor = Color3.fromRGB(255, 255, 255)})
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(15),{TintColor = Color3.fromRGB(255, 255, 255)})
 TW:Play()
 local cue1 = Instance.new("Sound")
 cue1.Parent = game.Workspace
@@ -56,7 +48,7 @@ end)
 camShake:Start()
 camShake:ShakeOnce(10,3,0.1,6,2,0.5)
 local speed = math.random(150,210)
-local delay = {"0.1", "0.2", "0.3", "0.4", "0.5"}
+local delay = {"0.1", "0.2", "0.3"}
 local fuck = delay[math.random(1, #delay)]
 wait(2.8)
 
@@ -615,5 +607,3 @@ end
 -- Run the created entity
 Creator.runEntity(entity)
 game.SoundService.AmbientReverb = "Cave"
-end
-end)()
